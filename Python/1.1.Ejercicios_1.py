@@ -15,13 +15,14 @@ class Estudiante():
             print(f'El estudiante {self.nombre} esta estudiando.')
 
 # Capturamos los atributos
-# nombre = input('Introduce el nombre del estudiante: ')
-# edad = int(input('Introduce la edad del estudiante: '))
-# genero = input('Introduce el genero del estudiante: ')
-# grado = int(input('Introduce el grado del estudiante: '))
+nombre = input('Introduce el nombre del estudiante: ')
+edad = int(input('Introduce la edad del estudiante: '))
+genero = input('Introduce el genero del estudiante: ')
+grado = int(input('Introduce el grado del estudiante: '))
 
 # Creamos nuestro objeto con los atributos poporcionados
-estudiante_1 = Estudiante('Sandra', 31, 'Femenino', 9)
+# estudiante_1 = Estudiante('Sandra', 31, 'Femenino', 9)
+estudiante_2 = Estudiante(nombre, edad, genero, grado)
 
 accion = input('Qué acción deseas que el estudiante realice?').upper()
 
@@ -29,7 +30,7 @@ accion = input('Qué acción deseas que el estudiante realice?').upper()
 while True:
     
     if accion == 'ESTUDIAR':
-        estudiante_1.estudiar()
+        estudiante_2.estudiar()
         break
     else:
         print('No es una acción valida')

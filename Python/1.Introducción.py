@@ -19,4 +19,3 @@ print(celular_1.marca)
 
 # Utilizamos los metodos del objeto
 celular_2.llamar()
-
