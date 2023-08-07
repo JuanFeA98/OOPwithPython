@@ -28,28 +28,26 @@ class Empleado(Persona):
     def trabajar(self):
         print(f'{self.nombre} esta trabajando como {self.trabajo}')
 
-
 # Vamos a crear una clase que hereda de Persona y de Artista
 class EmpleadoArtista(Persona, Artista):
     # Especificamos los atributos que se heredaran de cada clase
-    def __init__(self, nombre, edad, nacionalidad, habilidad, salario, empresa):
+    def __init__(self, nombre, edad, nacionalidad, habilidad, salario, trabajo):
         Persona.__init__(self, nombre, edad, nacionalidad)
         Artista.__init__(self, habilidad)
 
         # Añadimos los atributos propios de la clase
         self.salario = salario
-        self.empresa = empresa
+        self.trabajo = trabajo
 
     def presentarse(self):
-        return (f'Hola, soy {self.nombre} y {self.mostrar_habilidad()}. Trabajo como {self.empresa}')
-
+        return (f'Hola, soy {self.nombre} y {self.mostrar_habilidad()}. Trabajo como {self.trabajo}')
 
 roberto = EmpleadoArtista(
             nombre='Roberto', 
             edad=35, 
             nacionalidad='colombiano', 
             habilidad='cantar',
-            empresa='programador', 
+            trabajo='programador', 
             salario=10000
         )
 
