@@ -13,14 +13,17 @@ class PrimeraClaseIntermedia(PrimeraClaseMadre):
     pass
 
 class SegundaClaseIntermedia(SegundaClaseMadre):
-    # def quien_eres(self):
-        # print('Soy la clase intermedia 2')
-    pass
+    def quien_eres(self):
+        print('Soy la clase intermedia 2')
+    # pass
 
 class Hija(PrimeraClaseIntermedia, SegundaClaseIntermedia):
-    # def quien_eres(self):
-        # print('Soy la clase hija')
-    pass
+    def quien_eres(self):
+        print('Soy la clase hija')
+    # pass
 
 objeto = Hija()
 objeto.quien_eres()
+
+# Method Resolution Order
+print(Hija.mro())
