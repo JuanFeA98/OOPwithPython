@@ -11,8 +11,8 @@ class Persona():
 
 
 class Estudiante(Persona):
-    def __init__(self):
-        pass
+    def __init__(self, curso):
+        self.curso= curso
 
 persona = Estudiante('Juan', 25)
 
